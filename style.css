@@ -10,7 +10,7 @@ body{
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    height: 50px;
+    height: 70px;
     background-color: #0F0A1F;
 }
 
@@ -21,6 +21,10 @@ nav a {
     color: #ffffff;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 38px;
     margin: 0;
@@ -28,6 +32,78 @@ h1 {
 
 }
 
-nav a:hover {
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+/*sessão home*/
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+    background-color: #30205A;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+    box-shadow: 5px 5px 2px #0F0A1F;
+}
+
+#home h2 {
+    font-size: 40px;
+    margin: auto;
+    color: #ffffff;
+    
+}
+
+#home p {
+    font-size: 20px;
+}
+
+#home img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 9px 7px 2px #0F0A1F;
+}
+
+/*sessão principal*/
+.textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-top: 80px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #30205A;
+    box-shadow: 5px 5px 2px #0F0A1F;
+    color: #ffffff;
+}
+
+.titulo {
+    font-size: 35px;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.textbox p {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+/*hyperlink*/
+#jogo-github a{
     text-decoration: underline;
+    color: #a58bf2;
+}
+
+/*lista de habilidades*/
+ul {
+    font-size: 25px;
+    margin-right: auto;
 }
