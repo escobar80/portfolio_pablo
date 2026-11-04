@@ -2,6 +2,7 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 70px;
     background-color: #1A1333;
 }
 
@@ -9,6 +10,11 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    margin: 0 auto;
     padding: 10px;
     height: 70px;
     background-color: #0F0A1F;
@@ -39,26 +45,34 @@ h1 {
 /*sessão home*/
 #home {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1400px;
+    flex-direction: row;
+    align-items: start;
+    width: 70%;
     background-color: #30205A;
-    margin: 40px;
+    margin: 40px auto;
+    scroll-margin-top: 110px;
     padding: 20px;
     border-radius: 20px;
     color: #ffffff;
     box-shadow: 5px 5px 2px #0F0A1F;
 }
 
-#home h2 {
+#home h3 {
     font-size: 40px;
-    margin: auto;
     color: #ffffff;
-    
+    margin-bottom: 40px;   
+}
+
+#home h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10px;
+    margin-bottom: 40px; 
 }
 
 #home p {
     font-size: 20px;
+    margin: 10px;
 }
 
 #home img {
@@ -80,6 +94,7 @@ h1 {
     margin-top: 80px;
     padding: 20px;
     border-radius: 15px;
+    scroll-margin-top: 110px;
     background-color: #30205A;
     box-shadow: 5px 5px 2px #0F0A1F;
     color: #ffffff;
@@ -96,8 +111,8 @@ h1 {
     color: #ffffff;
 }
 
-/*hyperlink*/
-#jogo-github a{
+/*decoração para hyperlinks*/
+.hyperlink a{
     text-decoration: underline;
     color: #a58bf2;
 }
@@ -106,4 +121,100 @@ h1 {
 ul {
     font-size: 25px;
     margin-right: auto;
+}
+
+/*contato*/
+.contato-textbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70%;
+    margin: 80px auto 20px;
+    padding: 20px;
+
+    border-radius: 15px;
+    background-color: #30205A;
+    box-shadow: 5px 5px 2px #0F0A1F;
+    color: #ffffff;
+}
+
+#contato .titulo {
+    width: 100%;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+}
+
+.contato-text {
+    width: 45%;
+    text-align: left;
+}
+
+.contato-text p {
+    font-size: 20px;
+    transform: translateY(-20px);
+}
+
+.contato-text a {
+    text-decoration: underline;
+    color: #a58bf2;
+    font-size: 18px;
+}
+
+/*parte do formulário de contato*/
+.contato-form {
+    width: 45%;
+    background-color: #48377f;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px #0F0A1F;
+}
+
+.contato-form label {
+    font-size: 18px;
+}
+.contato-form h4 {
+    font-size: 24px;
+}
+
+.contato-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contato-form textarea {
+    height: 20px;
+    resize: vertical;
+}
+
+.contato-form input[type="submit"] {
+    background-color: white;
+    color: #30205A;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contato-form input:user-invalid, textarea:user-invalid{
+    border: 2px solid rgba(255, 0, 0, 0.743);
+    background-color: rgba(255, 0, 0, 0.135);
+    color: rgb(251, 251, 251);
+}
+    
+
+/*rodapé*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0F0A1F;
+    color: #ffffff;
 }

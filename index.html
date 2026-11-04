@@ -25,8 +25,11 @@
 
     <div class="container">
         <div id="home">
-            <h2>Olá, eu sou o Pablo!</h2>
-            <p>Sou um desenvolvedor web e amo tecnologia. Bem-vindo ao meu portfólio!</p>
+            <div id="home-text">
+                <h3>Olá, eu sou o Pablo!</h3>
+                <h4>Desenvolvedor web em formação.</h4>
+                <p>Sou um estudante de desenvolvimento web e amo tecnologia. Bem-vindo ao meu portfólio!</p>
+            </div>
 
             <figure>
                 <img src="img/foto.jpeg" alt="Foto de Pablo" title="Esse sou eu!">
@@ -35,10 +38,10 @@
 
         <div class="textbox" id="sobre-mim">
             <h2 class="titulo">Sobre mim</h2>
-            <p>Atualmente, estou cursando Análise e desenvolvimento de sistemas no Instituto Federal
+            <p>Meu nome é Pablo Donato. Atualmente, estou cursando Análise e desenvolvimento de sistemas no Instituto Federal
                Baiano, campus guanambi. Sou apaixonado por tecnologia e sempre procuro por novos 
                desafios. Ao decorrer da minha formação eu venho aprendendo diversar áreas da computação, como 
-               lógica de programação e banco de dados.</p>
+               lógica de programação e banco de dados. gosto de desafios e sempre busco inovar.</p>
         </div>
 
         <div class="textbox" id="projetos">
@@ -46,7 +49,10 @@
             <p>Um dos meus projetos mais recentes é um jogo de cartas pvp feito em C utilizando a biblioteca raylib.
               O jogo utiliza conceitos de estruturas de dados, como filas e pilhas para controlar as cartas dos jogadores.
               O jogo foi feito por mim, em parceria com Dyone Paulo e leonardo, e  o github o projeto pode ser 
-              encontrado <span class="link" id="jogo-github"><a href="https://github.com/dyonepaulo/exu-card-game" target="_blank">aqui</a></span>.
+              encontrado <span class="hyperlink"><a href="https://github.com/dyonepaulo/exu-card-game" target="_blank">aqui</a></span>.
+              <figure>
+                <img src="img/exu-games.png" alt="Imagem do jogo de cartas" title="Esse é o jogo de cartas que eu fiz">
+              </figure>
             </p>
         </div>
 
@@ -65,8 +71,32 @@
             </ul>
         </div>
 
-        <div class="textbox" id="contato">
+        <div class="contato-textbox" id="contato">
             <h2 class="titulo">Contato</h2>
+            
+            <div class="contato-text">
+                <p>Me envie uma mensagem, estou sempre aberto a novas oportunidades para aprender coisas novas!</p>
+                <a class="hyperlink" href="https://www.instagram.com/pd_385/">Meu Instagram</a>
+            </div>
+
+            <div class="contato-form">
+                <form action="mailto:pablodonato173@gmail.com" method="POST" enctype="text/plain">
+
+                    <h4>Entre em contato!</h4>
+                    
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 
