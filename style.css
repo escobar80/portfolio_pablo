@@ -29,6 +29,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    color: #a58bf2;
 }
 
 h1 {
@@ -203,6 +204,13 @@ ul {
     color: #30205A;
     font-weight: bold;
     cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.contato-form input[type="submit"]:hover {
+    background-color: #a58bf2;
+    color: white;
+    transform: scale(1.05);
 }
 
 .contato-form input:user-invalid, textarea:user-invalid{
